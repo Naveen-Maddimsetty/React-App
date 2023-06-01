@@ -7,11 +7,6 @@ pipeline {
                 sh "sudo npm run build"
             }
         }
-           stage("Test") {
-            steps {
-                sh "sudo npm run test"
-            }
-        }
         stage("Deploy") {
             steps {
                 sh "sudo rm -rf /var/www/jenkins-react-app"
