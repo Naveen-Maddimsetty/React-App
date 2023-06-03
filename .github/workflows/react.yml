@@ -26,7 +26,7 @@ jobs:
         lfs: true
 
     - run: npm install
-    - run: npm run build  --href "/React/" --if-present
+    - run: CI=false npm run build  --href "/React/" --if-present
     - run: npm test
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
