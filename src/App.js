@@ -4,13 +4,11 @@ import './App.css';
 
 render() {
   return (
-    <>
-       React fragments.
-      <h2>A heading</h2>
-      More React fragments.
-      <h2>Another heading</h2>
-      Even more React fragments.
-    </>
+    <div>
+      <p>foo</p>
+      <p>bar</p>
+      <p>baz</p>
+    </div>
   );
 }
 
