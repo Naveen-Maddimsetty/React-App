@@ -2,13 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+render() {
   return (
-    <div class="foo">bar</div>
-    <div className="App">
-      <h1>Hello</h1>
-      <h2>This is a reactapp</h2>
-    </div>
+    <>
+       React fragments.
+      <h2>A heading</h2>
+      More React fragments.
+      <h2>Another heading</h2>
+      Even more React fragments.
+    </>
   );
 }
 
