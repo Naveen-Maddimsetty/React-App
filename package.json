@@ -21,8 +21,8 @@
     "eject": "react-scripts eject"
   },
   "repository": {
-	  "type": "git",
-	  "url": "https://naveen-maddimsetty.github.io/React-App/"
+    "type": "git",
+    "url": "https://naveen-maddimsetty.github.io/React-App/"
   },
   "eslintConfig": {
     "extends": "react-app"
