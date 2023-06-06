@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://naveen-maddimsetty.github.io/React-App/"
+    "url": "https://mmworkspace.com/react/"
   },
   "eslintConfig": {
     "extends": "react-app"
