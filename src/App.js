@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-return (
+return ;(
     <div class="foo">bar</div>
     <div className="App">
       <h1>Hello</h1>
