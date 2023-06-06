@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-render() {}
+render(); {}
 return (
     <div class="foo">bar</div>
     <div className="App">
