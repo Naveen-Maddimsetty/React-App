@@ -28,7 +28,7 @@ jobs:
     - run: npm install
     - run: CI=false npm run build  --href "/React/" --if-present
     - name: Deploy 🚀
-      uses: actions/checkout@v3
+      uses: actions/checkout@production
       with:
         token: ${{ secrets.TOKEN }}
         branch: deploy  # The branch the action should deploy to.
