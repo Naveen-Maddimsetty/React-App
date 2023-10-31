@@ -3,18 +3,18 @@ pipeline {
      stages {
         stage("Build") {
             steps { 
-                bat "npm install"
-                bat "npm run build"
+                sh "sudo npm install"
+                sh "sudo npm run build"
             }
         }
         stage("Test") {
             steps {
-                bat "npm run test"
+                sh "sudo npm run test"
             }
         }
         stage("Deploy") {
             steps {
-                bat "cp -r C:/ProgramData/Jenkins/.jenkins/workspace/reactwebapplication/build  C:/Users/Matoshri/Downloads/nginx-1.24.0/nginx-1.24.0/"
+                sh "sudo cp -r C:/ProgramData/Jenkins/.jenkins/workspace/reactwebapplication/build  C:/Users/Matoshri/Downloads/nginx-1.24.0/nginx-1.24.0/"
             }
         }
     }
