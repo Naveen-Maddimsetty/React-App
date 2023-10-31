@@ -7,7 +7,7 @@ pipeline {
                 sh "sudo npm run build"
             }
         }
-          stage("Test") {
+        stage("Test") {
             steps {
                 sh "sudo npm run test"
             }
