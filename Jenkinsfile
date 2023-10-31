@@ -3,6 +3,7 @@ pipeline {
      stages {
         stage("Build") {
             steps {
+                bat git clone "https://github.com/Naveen-Maddimsetty/React-App.git" 
                 bat "npm install"
                 bat "npm run build"
             }
