@@ -1,9 +1,13 @@
 pipeline {
-     agent any
+  agent any
      stages {
-        stage("Build") {
+      stage("Clone") {
             steps { 
                 sh "git clone https://github.com/Naveen-Maddimsetty/React-App/"
+            }
+        }
+        stage("Build") {
+            steps { 
                 sh "npm install"
                 sh "npm run build"
             }
