@@ -14,7 +14,7 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                bat "sudo cp -r C:\ProgramData\Jenkins\.jenkins\workspace\reactwebapplication  C:\Users\Matoshri\Downloads\nginx-1.24.0\nginx-1.24.0\"
+                bat "sudo cp -r C:\ProgramData\Jenkins\.jenkins\workspace\reactwebapplication\build  C:\Users\Matoshri\Downloads\nginx-1.24.0\nginx-1.24.0\"
             }
         }
     }
