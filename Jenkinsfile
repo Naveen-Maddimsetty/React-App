@@ -1,11 +1,6 @@
 pipeline {
   agent any
      stages {
-      stage("Git Clone") {
-            steps { 
-                sh "https://github.com/Naveen-Maddimsetty/React-App.git"
-            }
-        }
         stage("Build") {
             steps { 
                 sh "npm install"
