@@ -3,7 +3,7 @@ pipeline {
      stages {
         stage("Build") {
             steps { 
-                sh "https://github.com/Naveen-Maddimsetty/React-App/"
+                sh "git clone https://github.com/Naveen-Maddimsetty/React-App/"
                 sh "npm install"
                 sh "npm run build"
             }
