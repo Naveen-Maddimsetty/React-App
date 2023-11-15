@@ -1,15 +1,16 @@
 pipeline {
-  agent any
+     agent any
      stages {
         stage("Build") {
-            steps { 
-                sh "npm install"
-                sh "npm run build"
+            steps {
+                sh "sudo npm install"
+                sh "sudo npm run build"
             }
         }
         stage("Deploy") {
             steps {
-                sh "cp -r C:/ProgramData/Jenkins/.jenkins/workspace/reactwebapplication/build  C:/Users/Matoshri/Downloads/nginx-1.24.0/nginx-1.24.0/"
+                sh "sudo rm -rf /var/www/react-app"
+                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/react-app/"
             }
         }
     }
